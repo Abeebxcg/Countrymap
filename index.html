@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+      .description{
+        line-height: 40px;
+        text-align-last: auto;
+      }
+
+      @media screen and (max-width: 480px) {
+        .description, .descHead {
+          display: none;
+        }
+        .count{
+          width: 100%;
+        }
+}
+      
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar position-sticky z-1 top-0  right-0  shadow bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">CountryLog</a>
+        <div class="d-flex">
+          <input
+            class="form-control me-2"
+            placeholder="Search"
+            id="searchBtn"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" onclick="searchCountry()">
+            Search
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-center count rounded  h5 py-2 shadow text-success border-1 my-5">
+             Welcome to country Log, a free country resource.
+            </div>
+            <div >
+              <h5 class="descHead">Description</h5>
+              <p class="description">
+                A country is a distinct part of the world, such as a state, nation, or other political entity. <br>
+                It may be a sovereign state or make up one part of a larger state.[1] For example, the country of Japan is an independent, sovereign state, while the country of Wales is a component of a multi-part sovereign state, the United Kingdom. A country may be a historically sovereign area (such as Korea), a currently sovereign territory with a unified government (such as Senegal), or a non-sovereign geographic region associated with certain distinct political, ethnic, or cultural characteristics (such as the Basque Country). <br> <br>
+
+                The definition and usage of the word "country" is flexible and has changed over time. The Economist wrote in 2010 that "any attempt to find a clear definition of a country soon runs into a thicket of exceptions and anomalies."[2] Most sovereign states, but not all countries, are members of the United Nations. <br><br>
+                
+                The largest country by area is Russia, while the smallest is the microstate Vatican City. The most populous is India, while Vatican City is also the least populous.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 position-relative">
+            <h5 class="text-danger mt-5">
+              NB: Read the below instruction carefully
+            </h5>
+            <div class="text my-5 h5"># Countries available includes</div>
+
+            <p class="mb-5">
+               <span class="shadow  p-2 text-primary">ITALY</span> ,
+               <span class=" shadow  p-2 text-danger">SPAIN</span> ,
+               <span class=" shadow text-success  p-2">ENGLAND</span> ,
+               <span class=" shadow  p-2">GERMANY</span> ,
+               <span class=" shadow  p-2 text-primary">BELGIUM</span> ,
+               <span class=" shadow  p-2 text-warning">SWITZERLAND</span> ,
+               <span class=" shadow  p-2 text-success">USA</span> 
+             
+             
+            </p>
+            <div class="my-3 ">
+              <span class=" shadow  p-2 text-success">SAUDI ARABIA</span> ,
+              <span class=" shadow  p-2 text-danger">NIGERIA</span> ,
+              <span class=" shadow  p-2 text-warning">MORROCO</span> ,
+              <span class=" shadow  p-2 text-primary">MALI</span> ,
+              <span class=" shadow  p-2 text-muted">SENEGAL</span> ,
+              <span class=" shadow  p-2 text-secondary">UAE</span> 
+              <span class=" shadow  p-2 text-danger">FRANCE</span> 
+            </div>
+            <div class="alert alert-danger h5 text-center mt-3" id="error" style="display: none;">Please Input a country (one out of above countries)</div>
+            <div class="displaycard w-75 mx-auto h-75" id="displayme">
+              
+        </div>
+      </div>
+    </nav>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
